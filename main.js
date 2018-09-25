@@ -34,4 +34,39 @@ $(document).ready(function() {
       }
     });
   });
+
+
+
+  //Functionality for the read  button doctor
+  $("#toggle1").click(function () {
+    var elem1 = $("#toggle1").text();
+    if (elem1 == "Citește mai mult") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle1").text("Citește mai puțin");
+      $("#text1").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle1").text("Citește mai mult");
+      $("#text1").slideUp();
+    }
+  });
+
+  // functionality for read more button doctorita
+  
+  $("#toggle").click(function () {
+    var elem = $("#toggle").text();
+    if (elem == "Citește mai mult") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Citește mai puțin");
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Citește mai mult");
+      $("#text").slideUp();
+    }
+  });
 });
+
+
+
+

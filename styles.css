@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -92,7 +92,7 @@ nav {
   line-height: 1.375em;
   font-weight: 400;
   font-style: italic;
-  margin: 70px 0;
+  margin: 15px 0;
 }
 
 .item span {
@@ -110,6 +110,11 @@ nav {
 }
 
 .panel-footer .btn:hover {
+  border: 1px solid rgb(13, 105, 190);
+  background-color: #fff !important;
+  color: rgb(13, 105, 190);
+}
+.card-body .btn:hover {
   border: 1px solid rgb(13, 105, 190);
   background-color: #fff !important;
   color: rgb(13, 105, 190);
@@ -201,6 +206,7 @@ footer .glyphicon {
     opacity: 0;
     transform: translateY(70%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0%);
@@ -212,6 +218,7 @@ footer .glyphicon {
     opacity: 0;
     -webkit-transform: translateY(70%);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -223,6 +230,7 @@ footer .glyphicon {
     text-align: center;
     margin: 25px 0;
   }
+
   .btn-lg {
     width: 100%;
     margin-bottom: 35px;
@@ -236,17 +244,20 @@ footer .glyphicon {
 }
 
 #banner {
-  height: 250px;
+  height: 540px;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  margin: 0;
 }
 
 #banner img {
   border: none;
   display: block;
   margin: 0 auto;
+  width: 60%;
+  height: 400px
 }
-
 
 #myPage,
 #about {
@@ -254,8 +265,8 @@ footer .glyphicon {
 }
 
 #services,
-#portfolio,
-#pricing,
+#portofolio,
+#exemple,
 #contact {
   padding-top: 150px;
 }
@@ -285,7 +296,7 @@ footer .glyphicon {
 }
 
 .dropdown-content a {
-  padding:  1px;
+  padding: 1px;
   font-size: 12px;
   text-decoration: none;
   display: block;
@@ -304,49 +315,45 @@ footer .glyphicon {
   background-color: rgb(13, 105, 190);
 }
 
-
-
 /* Responsive Styles */
-
 @media screen and (max-width:780px) {
+
   /* Make dropdown links appears links */
   .dropdown {
     position: static;
     display: block;
     margin-bottom: 23px;
-   }
- 
+  }
+
   /* Make all menu links full width */
-  .dropbtn,.dropdown-content a:hover {
+  .dropbtn,
+  .dropdown-content a:hover {
     width: 100%;
   }
-  
 }
 
 /* ============================================================================ */
 /* Position the image container (needed to position the left and right arrows) */
-
 .container {
   position: relative;
- 
-  
 }
 
 /* Hide the images by default */
-
 .mySlides {
   display: none;
-  
+ 
+}
+.mySlides img{
+  width: 100%;
+  height: 470px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
-
 .cursor {
   cursor: pointer;
 }
 
 /* Next & previous buttons */
-
 .prev,
 .next {
   cursor: pointer;
@@ -355,30 +362,28 @@ footer .glyphicon {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color:rgb(13, 105, 190);
+  color: rgb(13, 105, 190);
   font-weight: bold;
-  font-size: 30px;
-  border-radius: 35px 0 0 35px ;
+  font-size: 20px;
+  border-radius: 35px 0 0 35px;
   user-select: none;
   -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
-
 .next {
-  right: 0;
-  border-radius:0  35px  35px 0;
+  right: 15px;
+  border-radius: 0 35px 35px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  text-decoration-line: none;
 }
 
 /* Number text (1/3 etc) */
-
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -388,12 +393,12 @@ footer .glyphicon {
 }
 
 /* Container for image text */
-
 .caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
+  
 }
 
 .row:after {
@@ -403,14 +408,14 @@ footer .glyphicon {
 }
 
 /* Six columns side by side */
-
 .column {
   float: left;
-  width: 16.66%;
+  /* width: 16.66%; */
+  width: 20%;
+  
 }
 
 /* Add a transparency effect for thumnbail images */
-
 .demo {
   opacity: 0.6;
 }
@@ -418,4 +423,43 @@ footer .glyphicon {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+#text, #text1 {
+  display: none;
+}
+.imgCab{
+  margin-left: 0;
+  padding-right: 15px;
+}
+.thumbnail a:hover{
+  text-decoration-line: none;
+}
+#services .thumbnail img{
+height: 250px;
+}
+#services .thumbnail:hover{
+ box-shadow: 5px 0px 40px rgba(8, 23, 233, 0.5);
+}
+#banner2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+}
+#banner3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%px;
+  height: 300px;
+  z-index: -1;
+}
+ 
+.text-primary,.text-info {
+  text-indent: 20px;
 }
