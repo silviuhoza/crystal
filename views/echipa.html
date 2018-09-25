@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -73,77 +75,111 @@
         </div>
       </div>
   </nav>
-<h1>Echipa noasta</h1>
-<!-- Container for the image gallery -->
-<div class="container">
+  <h1>Echipa noasta</h1>
+  <!-- Container for the image gallery -->
+  <div class="container">
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-1.jpg" style="width:100%">
-  </div>
+    <div class="row ">
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Doctor Dana</h1>
+          </div>
+          <div class="panel-body">
+            <img src="../img/2018_07_04_FAB_4288.jpg" class="img-thumbnail" alt="">
+          </div>
+          <div class="panel-footer">
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-2.jpg" style="width:100%">
-  </div>
+            <a href="#contact" class="btn btn-lg">Doresti o programare</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Doctor Dana</h1>
+          </div>
+          <div class="panel-body">
+            <img src="../img/2018_07_04_FAB_4261.jpg" class="img-thumbnail" alt="">
+          </div>
+          <div class="panel-footer">
+            <!-- <h3>$29</h3>
+            <h4>per month</h4> -->
+            <a href="#contact" class="btn btn-lg">Doresti o programare</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Doctor Cristian</h1>
+          </div>
+          <div class="panel-body">
+            <img src="../img/2018_07_04_FAB_4357.jpg" class="img-thumbnail" alt="">
+          </div>
+          <div class="panel-footer">
+            <!-- <h3>$49</h3>
+            <h4>per month</h4> -->
+            <a href="#contact" class="btn btn-lg">Doresti o programare</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card " style="width: 35rem;">
+          <img class="card-img-top img-thumbnail" src="../img/2018_07_04_FAB_4357.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Doctorul Cristian</h3>
+              <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk
+                of the card's content.
+              </p>
+              <div>
+                <span id="text" class="card-text text-info">CSS is designed primarily to enable the separation of
+                  document content
+                  from document presentation, including aspects such as the layout, colors, and fonts.</span>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-3.jpg" style="width:100%">
-  </div>
+              </div>
+              <div class="btn-container">
+                <button id="toggle" class="btn btn-default">Read More</button>
+              </div>
+              <br>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" style="width: 35rem;">
+          <img class="card-img-top img-thumbnail" src="../img/2018_07_04_FAB_4288.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Doamna doctor Dana</h3>
+            <p class="card-text text-info">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
 
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-4.jpg" style="width:100%">
-  </div>
+            <div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-5.jpg" style="width:100%">
-  </div>
+              <span id="text" class="card-text text-info">CSS is designed primarily to enable the separation of
+                document content from document presentation, including aspects such as the layout, colors, and fonts.</span>
 
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="../img/protetica-lucrari-portelan-6.jpg" style="width:100%">
-  </div>
+            </div>
+            <div class="btn-container">
+              <button id="toggle" class="btn btn-default">Read More</button>
+            </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Zambetul frumos">
+            <br>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Zambetul afisat">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Prelucrari la dinti">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Zambetul larg">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Verificari ale dintilor">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../img/protetica-lucrari-portelan-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lucrari">
-    </div>
+
   </div>
-</div>
 
 
 
-<script src="../imp.js"></script>
 
-  
+
+  <script src="../imp.js"></script>
+
+
 </body>
+
 </html>

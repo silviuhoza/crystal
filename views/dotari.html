@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Crystal Dent Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=10vice-width,10nitial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand " href="../index.html">
+          <div class="logocrystal">
+            <img src="../img/dintele-crystal1.png" style="max-width:105px; max-height:115px;">
+          </div>
+        </a>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="nav navbar-nav navbar-right  ">
+          <div class="dropdown">
+            <a href="../#about" class="dropbtn">Despre Noi</a>
+
+            <div class="dropdown-content" style="left:0;">
+              <a href="../views/echipa.html">Echipa noastra</a>
+
+              <a href="#">Dotari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="../#services" class="dropbtn">Servicii</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="../views/consultatie.html">Consultatii</a>
+              <a href="../views/implanturi.html">Implanturi</a>
+              <a href="#">Radiologie dentara si operatii</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="../#portfolio" class="dropbtn">Portofoliu</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">Proiecte</a>
+              <a href="#">Certificari</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="../#pricing" class="dropbtn">Tarife</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="../views/consultatie.html">Consultatie</a>
+              <a href="../views/implanturi.html">Implanturi</a>
+              <a href="#">Vizita</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="../#contact" class="dropbtn">Contact</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <!-- <h1>Cabinetul nostru</h1> -->
+  <!-- Container for the image gallery -->
+  <div class="container">
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Full-width pages with number text -->
+    <div class="mySlides">
+
+      <div class="numbertext">1 / 5</div>
+      <img src="../img/cab1.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="../img/cab2.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="../img/cab3.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="../img/cab4.jpg" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="../img/cab5.jpg" >
+    </div>
+
+
+
+
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row imgCab">
+      <div class="column">
+        <img class="demo cursor" src="../img/cab1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Scaunul">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/cab2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Laptopul si scaunul">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/cab3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Prelucrari la dinti">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/cab4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Alt cabinet">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../img/cab5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Cabinetul al doilea">
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="../imp.js"></script>
+
+
+</body>
+
+</html>

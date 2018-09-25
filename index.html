@@ -7,6 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"> -->
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -40,20 +42,20 @@
 
             <div class="dropdown-content" style="left:0;">
               <a href="views/echipa.html">Echipa noastra</a>
-              <a href="#">Parteneri</a>
-              <a href="#">Dotari</a>
+              <a href="views/dotari.html">Dotari</a>
             </div>
           </div>
           <div class="dropdown">
             <a href="#services" class="dropbtn">Servicii</a>
             <div class="dropdown-content" style="left:0;">
-              <a href="views/consultatie.html">Consultatii</a>
+              <a href="views/estetica-dentara.html">Estetica dentară</a>
               <a href="views/implanturi.html">Implanturi</a>
-              <a href="#">Radiologie dentara </a>
+              <a href="views/implantologie.html">Implantologie</a>
+              <a href="views/endodontie.html">Endodonție </a>
             </div>
           </div>
           <div class="dropdown">
-            <a href="#portfolio" class="dropbtn">Portofoliu</a>
+            <a href="#portfolio" class="dropbtn">Cazuistica</a>
             <div class="dropdown-content" style="left:0;">
               <a href="#">Proiecte</a>
               <a href="#">Certificari</a>
@@ -61,9 +63,9 @@
             </div>
           </div>
           <div class="dropdown">
-            <a href="#pricing" class="dropbtn">Tarife</a>
+            <a href="#exemple" class="dropbtn">Exemple</a>
             <div class="dropdown-content" style="left:0;">
-              <a href="views/consultatie.html">Consultatie</a>
+              <a href="views/estetica-dentara.html">Consultatie</a>
               <a href="#">implanturi</a>
               <a href="#">Vizita</a>
             </div>
@@ -77,9 +79,9 @@
     </div>
   </nav>
   <div class="container1">
-    <div class="jumbotron text-center">
+    <div class="slideanim">
 
-      <h2>Cateva imagini cu noi</h2>
+      <!-- <h2>Cateva imagini cu noi</h2> -->
       <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -91,21 +93,22 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox" id="banner">
           <div class="item active">
-            <img src="img/gura.jpg">
+
+            <img src="img/2018_07_04_FAB_4261.jpg">
             <h4>"This company is the best. I am so happy with the result!"
               <br>
               <span>Michael Roe, Vice President, Comment Box</span>
             </h4>
           </div>
           <div class="item">
-            <img src="img/dinti (Copy).jpg">
+            <img src="img/2018_07_04_FAB_4288.jpg">
             <h4>"One word... WOW!!"
               <br>
               <span>John Doe, Salesman, Rep Inc</span>
             </h4>
           </div>
           <div class="item ">
-            <img src="img/dinti2 (Copy).jpg">
+            <img src="img/2018_07_04_FAB_4354.jpg">
             <h4>"Could I... BE any more happy with this company?"
               <br>
               <span>Chandler Bing, Actor, FriendsAlot</span>
@@ -128,111 +131,125 @@
 
   <!-- Container (About Section) -->
   <div id="about" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>Cateva cuvinte despre noi</h2>
-        <br>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <br>
-        <a href="#contact" class="btn btn-default btn-lg">Ia legatura cu noi</a>
+    <div class="row slideanim">
+      <h2>Cateva cuvinte despre noi</h2>
+      <div class="col-sm-6">
+        <div class="card" style="width: 35rem;">
+          <img class="card-img-top img-thumbnail" src="../img/2018_07_04_FAB_4288.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Dr. Dana Gratziela Temneanu</h3>
+            <p class="card-text text-info">Sunt Dr. Dana Gratziela Temneanu, am terminat Facultatea de Stomatologie la
+              UMF. GR. T. Popa Iași, promoția 1995. Am profesat în România între anii 1996 până în 2000 iar din 2007
+              profesez la Roma, în Italia.
+            </p>
+
+            <div>
+
+              <span id="text" class="card-text text-info">Din 2001/2002
+                am facut <strong>cursuri de tehnica dentara</strong>, perioada 2002/2006 am urmat cursurile
+                Universitatii
+                G.D'Annunzio Chieti, Italia, Facultatea de Stomatologie mai exact <i>odontoiatrie e protesi dentaria</i>,
+                promotia 2006. Din 2007 sunt înscrisă în colegiul medicilor din Roma(Italia) și din <strong>2009 lucrez
+                  la Roma in cabinetul propriu, </strong>în domeniul privat cu firmă individuală. În tot acest timp am
+                participat în mod continu la cursuri de actualizare la cel mai înalt nivel, si particip în continuare
+                la cursuri și congrese de specialitate. </span>
+
+            </div>
+            <div class="btn-container">
+              <button id="toggle" class="btn btn-default">Citește mai mult</button>
+            </div>
+            <br>
+            <a href="views/echipa.html" class="btn btn-primary">Mai multe informați</a>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
-        <img src="./img/sclipire.png" alt="">
+
+      <div class="col-sm-6">
+        <div class="card " style="width: 35rem;">
+          <img class="card-img-top img-thumbnail" src="../img/2018_07_04_FAB_4357.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Dr. Cristian Ionel Temneanu</h3>
+            <p class="card-text text-info">Dr. Cristian are diploma de medic stomatolog obținută la Universitatea
+              "Petre Andrei" Iași, și deasemenea a urmat <i>Istituto professionale statale "Edmondo Amicis" Roma Italia</i>
+              profilul tehnica dentara. </p>
+            <div>
+              <span id="text1" class="card-text text-info">Domnul Dr. Cristian are și atestatul de implantologie la
+                <strong>UMF.</strong>Iași. El participă în permanență la cursuri și congrese de specialitate. </span>
+
+            </div>
+            <div class="btn-container">
+              <button id="toggle1" class="btn btn-default">Citește mai mult</button>
+            </div>
+            <br>
+            <a href="views/echipa.html" class="btn btn-primary">Mai multe informați</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid bg-grey">
-    <div class="row">
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-globe logo slideanim"></span>
-      </div>
-      <div class="col-sm-8">
-        <h2>Our Values</h2>
-        <br>
-        <h4>
-          <strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.</h4>
-        <br>
-        <p>
-          <strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.</p>
-      </div>
-    </div>
-  </div>
 
   <!-- Container (Services Section) -->
   <div id="services" class="container-fluid text-center">
     <h2>SERVICII</h2>
-    <h4>Ce oferim noi</h4>
     <br>
     <div class="row slideanim">
       <div class="col-sm-4">
-        <span>
-          <img src="./img/dentist (1).png" alt="">
-        </span>
-        <h4>Atentie</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <div class="thumbnail">
+          <a href="#">
+            <h4>Pedodontie</h4>
+            <img src="../img/igiena-orala-la-copii.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="col-sm-4">
-        <span>
-          <img src="./img/dentist (2).png" alt="">
-        </span>
-        <h4>Calitate</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <div class="thumbnail">
+          <a href="views/implantologie.html">
+            <h4>Implantologie</h4>
+            <img src="../img/durere-implant-dentar.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Implantul Toronto Bridge cu protezare imediată</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="col-sm-4">
-        <span>
-          <img src="./img/dentist (3).png" alt="">
-        </span>
-        <h4>Prelucrari cu grija</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
+        <div class="thumbnail ">
+          <a href="views/estetica-dentara.html">
+            <h4>Estetica și cosmetica dentară</h4>
+            <img src="../img/estetica dentara.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p><strong>Tratamentul conservativ, estetica dentară</strong></p>
+            </div>
+          </a>
+        </div>
       </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="views/endodontie.html">
+            <h4>Endodonție</h4>
+            <img src="../img/endodonție.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Tratamentul endodontic</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
     </div>
-    <br>
-    <br>
-    <div class="row slideanim">
-      <div class="col-sm-4">
-        <span>
-          <img src="./img/dentist (4).png" alt="">
-        </span>
-        <h4>Garantie</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span>
-          <img src="./img/book.png" alt="">
-        </span>
-        <h4>Colaborare</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4">
-        <span>
-          <img src="./img/blue.png" alt="">
-        </span>
-        <h4 style="color:#303030;">Lucru bine facut</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
+
+      
     </div>
-  </div>
+  
 
   <!-- Container (Portfolio Section) -->
   <div id="portfolio" class="container-fluid text-center bg-grey">
-    <h2>Portfolio</h2>
+    <h2>Cazuistica</h2>
     <br>
-    <h4>Ce am realizat noi</h4>
+    <h4>What we have created</h4>
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
@@ -240,7 +257,7 @@
           <p>
             <strong>Paris</strong>
           </p>
-          <p>Am facut, lucrari la persoane din Paris</p>
+          <p>Yes, we built Paris</p>
         </div>
       </div>
       <div class="col-sm-4">
@@ -249,7 +266,7 @@
           <p>
             <strong>New York</strong>
           </p>
-          <p>Am facut, lucrari la persoane din New York</p>
+          <p>We built New York</p>
         </div>
       </div>
       <div class="col-sm-4">
@@ -258,7 +275,7 @@
           <p>
             <strong>San Francisco</strong>
           </p>
-          <p>Am facut, lucrari la persoane din San Francisco</p>
+          <p>Yes, San Fran is ours</p>
         </div>
       </div>
     </div>
@@ -288,7 +305,7 @@
           </h4>
         </div>
         <div class="item">
-          <h4>"N-as putea ...fi mai multumit decat sunt ?"
+          <h4>"N-as putea ...FI mai multumit decat sunt ?"
             <br>
             <span>Chandler Bing, Actor, FriendsAlot</span>
           </h4>
@@ -308,7 +325,7 @@
   </div>
 
   <!-- Container (Pricing Section) -->
-  <div id="pricing" class="container-fluid">
+  <div id="exemple" class="container-fluid">
     <div class="text-center">
       <h2>Preturi</h2>
       <h4>Alege tariful care iti convine</h4>
@@ -325,7 +342,7 @@
             <p>
               <strong>Extractie</strong> 80 lei</p>
             <p>
-              <strong>Radiologie</strong> 100 lei</p>
+              <strong>Endodonție> 100 lei</p>
             <p>
               <strong>Operatie</strong> 200 lei</p>
             <p>
@@ -349,7 +366,7 @@
             <p>
               <strong>Extractie</strong> 80 lei</p>
             <p>
-              <strong>Radiologie</strong> 150 lei</p>
+              <strong>Endodonție> 150 lei</p>
             <p>
               <strong>Operatie</strong> 400 lei</p>
             <p>
@@ -373,7 +390,7 @@
             <p>
               <strong>Extractie</strong> 250 lei</p>
             <p>
-              <strong>Radiologie</strong> 200 lei</p>
+              <strong>Endodonție> 200 lei</p>
             <p>
               <strong>Operatie</strong> 500 lei</p>
             <p>
@@ -460,6 +477,7 @@
 
   </div>
   <script src="main.js"></script>
+
 
 </body>
 
