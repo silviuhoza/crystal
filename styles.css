@@ -463,3 +463,8 @@ height: 250px;
 .text-primary,.text-info {
   text-indent: 20px;
 }
+.list-pedodontie{
+  list-style: none;
+  color:#31708F;
+  text-indent: 50px;
+}
