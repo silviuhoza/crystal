@@ -256,7 +256,55 @@ footer .glyphicon {
   display: block;
   margin: 0 auto;
   width: 60%;
-  height: 400px
+  height: 380px
+}
+@media (max-width: 760px) {
+#banner{
+  height: 440px;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  margin: 0;
+}
+#banner h4,span{
+  font-size: 16px;
+}
+
+
+#banner img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 290px
+}
+ 
+}
+@media (max-width: 560px) {
+#banner{
+  height: 280px;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  margin: 0;
+}
+
+#banner h4,span {
+  font-size: 14px;
+}
+
+#myCarousel ol{
+  display: none;
+}
+
+#banner img {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 190px
+}
+ 
 }
 
 #myPage,
@@ -286,6 +334,7 @@ footer .glyphicon {
 }
 
 .dropdown-content {
+  margin-top: 10px;
   display: none;
   position: absolute;
   right: 0;
@@ -463,8 +512,13 @@ height: 250px;
 .text-primary,.text-info {
   text-indent: 20px;
 }
-.list-pedodontie{
+.list{
   list-style: none;
+  color:#31708F;
+  text-indent: 50px;
+}
+ .add{
+   list-style-position: inside;
   color:#31708F;
   text-indent: 50px;
 }
