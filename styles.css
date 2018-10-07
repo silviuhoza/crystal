@@ -481,15 +481,25 @@ footer .glyphicon {
   margin-left: 0;
   padding-right: 15px;
 }
-.thumbnail a:hover{
+
+.well{
+  height: 380px;
+}
+
+.well a:hover{
   text-decoration-line: none;
+
 }
-#services .thumbnail img{
-height: 250px;
+#services .well img{
+height: 210px;
+width: 95%;
+background-color: #31708F !important;
+margin-top: -15px;
 }
-#services .thumbnail:hover{
- box-shadow: 5px 0px 40px rgba(8, 23, 233, 0.5);
+#services .well:hover{
+ box-shadow: 5px 0px 40px rgba(13, 104, 190, 0.842);
 }
+
 #banner2 {
   position: absolute;
   top: 0;
