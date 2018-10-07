@@ -258,7 +258,7 @@ footer .glyphicon {
   width: 60%;
   height: 380px
 }
-@media (max-width: 760px) {
+@media screen and (max-width: 760px) {
 #banner{
   height: 440px;
   width: 100%;
@@ -280,7 +280,7 @@ footer .glyphicon {
 }
  
 }
-@media (max-width: 560px) {
+@media  (max-width: 560px) {
 #banner{
   height: 280px;
   width: 100%;
@@ -293,7 +293,7 @@ footer .glyphicon {
   font-size: 14px;
 }
 
-#myCarousel ol{
+ ol{
   display: none;
 }
 
@@ -371,7 +371,7 @@ footer .glyphicon {
   .dropdown {
     position: static;
     display: block;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
   /* Make all menu links full width */
